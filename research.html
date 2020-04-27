@@ -1,0 +1,474 @@
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <title>Bloomberg MHCI Project</title>
+      <meta name="description" content="Bloomberg MHCI Project">
+      <meta name="author" content="Norman">
+      <link rel="stylesheet" href="./research.css">
+      <link rel="stylesheet" href="./flexslider/flexslider.css" type="text/css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+      <script src="./flexslider/jquery.flexslider.js"></script>
+      <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">      
+    </head>
+    
+    <body>
+
+            <div id="nav-slide">
+                <span class="nav-link-1">ABOUT</span>
+                <span class="nav-link-2">RESEARCH</span>
+                <span class="nav-link-2">DESIGN</span>
+                <span class="nav-link-2 blog-1">BLOG</span>
+            </div>
+            <div class="nav-left">
+                <img class="logo" src="./images/bmhci-logo.png">
+                <img id="arrow" class="arrow" onclick="combine()" src="./images/arrow.png">
+                <img id="arrowup" class="arrowup" onclick="combineMobile()" src="./images/arrow-up.png">
+            </div>
+            <div class="holder-r"> 
+            <div class="research-start">
+            </div>
+            <div class="research-1">
+                <div class="sub-r-1">
+                    <span class="sub-r-header">RESEARCH</span>
+                    <span class="sub-r-text">Machine learning was uncharted territory for all team members when we first began. In order to submerge ourselves in this space, we conducted in-depth primary and secondary research before meeting up with our stakeholders at Bloomberg. This included reviewing literature and interviewing Data Scientists, ML Engineers, and Project Managers.<br><br>With a shared ML language, we then conducted various research methods to try to understand and visualize where the biggest pain points were for our stakeholders and where we could bring the most value. 
+                        </span>
+                </div>
+                <div class="sub-r-2">
+                    <span class="quote">&nbsp&nbspBut the fact that some geniuses were laughed at does&nbsp&nbsp <br> &nbsp&nbspnot imply that all who are laughed at are geniuses.&nbsp&nbsp</span>
+                </div>
+            </div>
+            <div class="research-2">
+                <span class="sub-r-header-2">
+                    Domain knowledge
+                </span>
+                <div class="hider">
+                <div class="tab-bar">
+                    <button class="sub-tab tablink active" onclick="openCity(event,'London')"><span class="tab-text">01</span><span class="tab-text-2">Literature Review</span></button>
+                    <button class="sub-tab shift-tab tablink" onclick="openCity(event,'Paris')"><span class="tab-text">02</span><span class="tab-text-2">Interviews with Faculty & Model Users</span></button>
+                    <button class="sub-tab shift-tab tablink" onclick="openCity(event,'Tokyo')"><span class="tab-text">03</span><span class="tab-text-2">Competitive Analysis</span></button>
+                  </div>
+                <div class="tab-box tabby" id="London">
+                    <div class="inside-tab">
+                        <span class="tabby-text">We researched academic papers on machine learning experiment management to gain domain knowledge and better understand the problem space. The literature review was also used to discover existing pain points and varying perspectives. <br><br>Furthermore, we reviewed literature from adjacent problem spaces that deal with tracking multiple moving parts of a complex system, such as healthcare. This was done to help keep our perspective open and create ideas outside of common practices. The literature review also informed and reinforced our proposed pain points of the ML process.
+                            </span>
+                    </div>
+                    <div class="inside-tab">
+                        <span class="tabby-text">There was one paper in particular that stood out to us. Its web-based dashboard summarized model performance in a bar chart as well as a scatterplot that displayed the relationships between hyperparameters and performance metrics.<br><br>Key Takeaways:<br><br></span>
+                        <div class="flex">
+                            <div class="wid-15">
+                                <span class="li-1-1">i</span>
+                            </div>
+                            <div>
+                                <span class="tabby-text"><span>It is recommended to utilize <b>different visualizations</b> such as charts and scatterplots to compare experiment results and provide different perspectives of the data.</span></span>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="flex">
+                            <div class="wid-15">
+                                <span class="li-1-1">ii</span>
+                            </div>
+                            <div>
+                                <span class="tabby-text"><span><b>Hierarchy is key.</b> Organization of a project in file format allows for efficient access of results.</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inside-tab">
+                        <img class="rgate" src="./images/researchgate.png" />
+                        <p class="rgate-text"><i>Runway: machine learning model experiment management tool</i> by Jason Tsay, Todd Mummert, Norman Bobroff, Alan Braz, Peter Westerink, Martin Hirzel</p>
+                    </div>
+                  </div>
+                  
+                  <div class="tab-box tabby" id="Paris" style="display:none">
+                        <div class="inside-tab-2">
+                                <div class="inner-fr-flex-1">
+                                        <!-- <span class="fr-text-1">01</span> -->
+                                        <div>
+                                            <span class="fr-header-1">Faculty</span>
+                                        </div>
+                                        </div>
+                                <span class="tabby-text">We aimed to further our domain knowledge in both Machine Learning and Experiment Management software by interviewing faculty at Carnegie Mellon. We interviewed Professor Jason Hong to discuss topics on Machine Learning and Professor Majd Sakr to review an ML experiment management project occuring in the Computer Science department.<br><br>Professor Sakr provided us with tips he learned from his projects which we kept in mind during our research phase. Sakr found the experiment management process to be broad so he recommended focusing on a specific area to provide strong targeted value. He also warned that the designs we test should be tested on the users who will be using the end product. These considerations helped us orient as we progressed into research.<br><br>Some findings:<br><br></span>
+                                <div class="flex">
+                                    <div class="wid-25">
+                                        <span class="li-1-1">i</span>
+                                    </div>
+                                    <div>
+                                        <span class="tabby-text"><span>Machine learning experiments are highly complex and nuanced. Each experiment can be the replication of the previous one. Instead of trying to design for the entire workflow, it may be more beneficial to zoom in on one specific use case.<br><br></span></span>
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                    <div class="wid-25">
+                                        <span class="li-1-1">ii</span>
+                                    </div>
+                                    <div>
+                                        <span class="tabby-text"><span>Professor Hong challenged us to answer these questions in our research:<br><br><i>What do different teams do?<br>What do they want to see differently from each other?<br>Who manages the cluster?<br>Who has the priority? 
+                                            </i></span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="inside-tab-2">
+                                    <div class="inner-fr-flex-1">
+                                            <!-- <span class="fr-text-1">02</span> -->
+                                            <div>
+                                                <span class="fr-header-1">Model Users</span>
+                                            </div>
+                                            </div>
+                                <span class="tabby-text">We then interviewed Machine Learning graduate students at Carnegie Mellon. These interviews provided us with a foundation early in the process in laying out the machine learning workflow.<br><br>We noticed there was a gap between Machine Learning in academia vs. industry. There wasn’t a high demand for collaboration as students often worked in silos. Their experiment sprints were smaller in scale in terms of amount of data collected.<br><br>Students also didn’t have to worry about production of their models. While keeping these differences in mind, the model user interviews provided us with useful domain knowledge of the ML workflow process.<br><br>Some findings:<br><br></span>
+                                <div class="flex">
+                                    <div class="wid-25">
+                                        <span class="li-1-1">i</span>
+                                    </div>
+                                    <div>
+                                        <span class="tabby-text"><span>In academic ML, there is less emphasis on building stable production models and more on exploration.<br><br></span></span>
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                    <div class="wid-25">
+                                        <span class="li-1-1">ii</span>
+                                    </div>
+                                    <div>
+                                        <span class="tabby-text"><span>Student experiments were generally on a smaller scale and would not require as many resources.<br><br></span></span>
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                    <div class="wid-25">
+                                        <span class="li-1-1">iii</span>
+                                    </div>
+                                    <div>
+                                        <span class="tabby-text"><span>A smaller scale equates to less requirements for tracking metrics.<br><br></span></span>
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                    <div class="wid-25">
+                                        <span class="li-1-1">iv</span>
+                                    </div>
+                                    <div>
+                                        <span class="tabby-text"><span>Academic Machine Learning workflows were similar to industry in the artifacts and tools they used for exploratory research.<br><br></span></span>
+                                    </div>
+                                </div>
+                            </div>
+                  </div>
+                  
+                  <div class="tab-box tabby" id="Tokyo" style="display:none">
+                        <div class="inside-tab-3">
+                                <span class="tabby-text">In this section we analyzed 4 machine learning management software and provided a breakdown of the key features/capabilities offered. We have guild.ai, comet.ml, neptune.ai, and mlflow.org.<br><br>Their features include:<br><br></span>
+                                <div class="flex">
+                                    <div class="wid-25">
+                                        <span class="li-1-1">i</span>
+                                    </div>
+                                    <div>
+                                        <span class="tabby-text"><span><b>Tracking</b> (metrics, artifacts, success rates, start/end times of experiments)<br>Reproducibility (ensuring experiments can be reproduced based on artifacts provided)<br><br></span></span>
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                    <div class="wid-25">
+                                        <span class="li-1-1">ii</span>
+                                    </div>
+                                    <div>
+                                        <span class="tabby-text"><span><b>Compare experiments</b> (having a visual comparison what works and what doesn’t)<br><br></span></span>
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                        <div class="wid-25">
+                                            <span class="li-1-1">iii</span>
+                                        </div>
+                                        <div>
+                                            <span class="tabby-text"><span><b>Collaboration amongst teams</b> (ability to see what members of the teams are currently working on to avoid duplication of efforts)<br><br></span></span>
+                                        </div>
+                                    </div>
+                                    <span class="tabby-text">From this, we gathered that there isn’t a tool that effectively encompasses all the capabilities. This raises two questions for our research in the space of experiment management at Bloomberg:<br><br></span>
+                                    <span class="semi tabby-text-2">Are we designing into a white space or are we working on top of something pre-existing?<br><br>What are the workarounds the engineers are currently adopting?</span>
+                            </div>
+                            <div class="inside-tab-4">
+                                <img class="compare" src="./images/compare.png" />
+                            </div>
+                  </div>
+            </div>
+        </div>
+        <div class="shower">
+            <div class="shower-spacer">
+                <span class="tab-text">01</span><span class="tab-text-2-b">Literature Review</span>
+            </div>
+            <div class="flexer">
+                <div class="inside-tab">
+                        <span class="tabby-text">We researched academic papers on machine learning experiment management to gain domain knowledge and better understand the problem space. The literature review was also used to discover existing pain points and varying perspectives. <br><br>Furthermore, we reviewed literature from adjacent problem spaces that deal with tracking multiple moving parts of a complex system, such as healthcare. This was done to help keep our perspective open and create ideas outside of common practices. The literature review also informed and reinforced our proposed pain points of the ML process.
+                            </span>
+                    </div>
+                    <div class="inside-tab">
+                        <span class="tabby-text">There was one paper in particular that stood out to us. Its web-based dashboard summarized model performance in a bar chart as well as a scatterplot that displayed the relationships between hyperparameters and performance metrics.<br><br>Key Takeaways:<br><br></span>
+                        <div class="flex">
+                            <div class="wid-15">
+                                <span class="li-1-1">i</span>
+                            </div>
+                            <div>
+                                <span class="tabby-text"><span>It is recommended to utilize <b>different visualizations</b> such as charts and scatterplots to compare experiment results and provide different perspectives of the data.</span></span>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="flex">
+                            <div class="wid-15">
+                                <span class="li-1-1">ii</span>
+                            </div>
+                            <div>
+                                <span class="tabby-text"><span><b>Hierarchy is key.</b> Organization of a project in file format allows for efficient access of results.</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inside-tab">
+                        <img class="rgate" src="./images/researchgate.png" />
+                        <p class="rgate-text"><i>Runway: machine learning model experiment management tool</i> by Jason Tsay, Todd Mummert, Norman Bobroff, Alan Braz, Peter Westerink, Martin Hirzel</p>
+                    </div>
+                </div>
+        </div>
+
+            <!-- <div class="research-2">
+                    <span class="sub-r-header-2">
+                        Domain knowledge
+                    </span>
+                    <div class="new-tabs">
+                    <div class="new-tab-bar">
+                        <button class="sub-tab tablink active" onclick="openCity(event,'London')"><span class="tab-text">01</span><span class="tab-text-2">Literature Review</span></button>
+                        <button class="sub-tab shift-tab tablink" onclick="openCity(event,'Paris')"><span class="tab-text">02</span><span class="tab-text-2">Interviews with Faculty & Model Users</span></button>
+                        <button class="sub-tab shift-tab tablink" onclick="openCity(event,'Tokyo')"><span class="tab-text">03</span><span class="tab-text-2">Competitive Analysis</span></button>
+                      </div>
+                    <div class="tab-box tabby" id="London">
+                        <div class="inside-tab">
+                            <span>Machine learning was uncharted territory for all team members when we first began. In order to submerge ourselves in this space, we conducted in-depth primary and secondary research before meeting up with our stakeholders at Bloomberg. This included reviewing literature and interviewing Data Scientists, ML Engineers, and Project Managers.</span>
+                        </div>
+                        <div class="inside-tab">
+                            <span>Machine learning was uncharted territory for all team members when we first began. In order to submerge ourselves in this space, we conducted in-depth primary and secondary research before meeting up with our stakeholders at Bloomberg. This included reviewing literature and interviewing Data Scientists, ML Engineers, and Project Managers.</span>
+                        </div>
+                        <div class="inside-tab">
+                            <span>Machine learning was uncharted territory for all team members when we first began. In order to submerge ourselves in this space, we conducted in-depth primary and secondary research before meeting up with our stakeholders at Bloomberg. This included reviewing literature and interviewing Data Scientists, ML Engineers, and Project Managers.</span>
+                        </div>
+                      </div>
+                      
+                      <div class="tab-box tabby" id="Paris" style="display:none">
+                            <div class="inside-tab">
+                                    <span>Machine learning was uncharted territory for all team members when we first began. In order to submerge ourselves in this space, we conducted in-depth primary and secondary research before meeting up with our stakeholders at Bloomberg. This included reviewing literature and interviewing Data Scientists, ML Engineers, and Project Managers.</span>
+                                </div>
+                                <div class="inside-tab">
+                                    <span>Machine learning was uncharted territory for all team members when we first began. In order to submerge ourselves in this space, we conducted in-depth primary and secondary research before meeting up with our stakeholders at Bloomberg. This included reviewing literature and interviewing Data Scientists, ML Engineers, and Project Managers.</span>
+                                </div>
+                                <div class="inside-tab">
+                                    <span>Machine learning was uncharted territory for all team members when we first began. In order to submerge ourselves in this space, we conducted in-depth primary and secondary research before meeting up with our stakeholders at Bloomberg. This included reviewing literature and interviewing Data Scientists, ML Engineers, and Project Managers.</span>
+                                </div>
+                      </div>
+                      <div class="tab-box tabby" id="Tokyo" style="display:none">
+                            <div class="inside-tab">
+                                    <span>Machine learning was uncharted territory for all team members when we first began. In order to submerge ourselves in this space, we conducted in-depth primary and secondary research before meeting up with our stakeholders at Bloomberg. This included reviewing literature and interviewing Data Scientists, ML Engineers, and Project Managers.</span>
+                                </div>
+                                <div class="inside-tab">
+                                    <span>Machine learning was uncharted territory for all team members when we first began. In order to submerge ourselves in this space, we conducted in-depth primary and secondary research before meeting up with our stakeholders at Bloomberg. This included reviewing literature and interviewing Data Scientists, ML Engineers, and Project Managers.</span>
+                                </div>
+                                <div class="inside-tab">
+                                    <span>Machine learning was uncharted territory for all team members when we first began. In order to submerge ourselves in this space, we conducted in-depth primary and secondary research before meeting up with our stakeholders at Bloomberg. This included reviewing literature and interviewing Data Scientists, ML Engineers, and Project Managers.</span>
+                                </div>
+                      </div>
+                </div>
+            </div> -->
+
+
+
+
+            <div class="blank-bar"></div>
+            <div class="field-research">
+                <span class="sub-r-header-3 ">Field Research in New York</span>
+                <div class="fr-div">
+                    <div class="inner-fr">
+                        <div class="inner-fr-flex-1">
+                        <span class="fr-text-1">01</span>
+                        <div>
+                            <span class="fr-header-1">Overview</span>
+                            <span class="fr-text-2">In order to answer the emerging questions, we started planning a visit to Bloomberg’s New York office and meeting our primary users in person — the Machine Learning Engineers, Data Scientists, and Product Managers.<br><br>We prepared an interview guide for two alternate research methods — contextual inquiry (building a master-apprentice relationship with our interviewee) and semi-structured interviews (directed narrative).<br><br>During the planning phase, we accounted for the spatial layout of the office environment while drafting our questions and activities. Another important aspect we considered was how much time away from work the users could take given our trip coincided with Valentine’s day and the beginning of a weekend. We realized that people might want to leave early for the day and therefore decided to carry chocolates and greeting cards to thank the participants for their generosity with time.</span>
+                        </div>
+                        </div>
+                        <div class="inner-fr-flex-2">
+                            <img class="holderimg" src="./images/holderimg.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="fr-div">
+                        <div class="inner-fr">
+                            <div class="inner-fr-flex-1">
+                            <span class="fr-text-1">02</span>
+                            <div>
+                                <span class="fr-header-1">Sense Mapping</span>
+                                <span class="fr-text-2">We gathered our notes from the New York trip and color coded them across different teams on an excel sheet. Using affinity clustering, we grouped these notes across need-based user statements.<br><br>This exercise was pivotal for us in identifying the core framework for the Machine Learning workflow.  The new framework helped us draft a sequence model workflow exercise for finding patterns during future research methods. We also uncovered gaps and missing information in the flow that needed further inquiry through semi-structured research in the form of a survey.</span>
+                            </div>
+                            </div>
+                            <div class="inner-fr-flex-2">
+                                <img class="holderimg" src="./images/holderimg.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="boxy">
+                        <p class="box-header">What did we learn?</p>
+                        <div class="box-inner flex">
+                                <span class="fr-text-1-box">01</span>
+                                <span class="fr-text-2">Identified follow-up methods to better understand the machine learning workflow</span>
+                        </div>
+                        <div class="box-inner-2 flex">
+                                <span class="fr-text-1-box">01</span>
+                                <span class="fr-text-2">Identified follow-up methods to better understand the machine learning workflow</span>
+                        </div>
+                    </div>
+                    <span class="sub-r-header-3 ">Current State Analysis</span>
+                    <div class="inner-fr bottom180">
+                        <div class="inner-fr-flex-1-1">
+                            <span class="fr-text-2">The current state of machine learning management at Bloomberg is conducted on the Data Science Platform (DSP). The DSP’s main function is to run ML experiments by connecting data and models with GPU then displaying the results in logs.<br><br>We aim to understand the advantages and the wish list for the DSP during our interviews with ML engineers. The findings will drive our design for the future state.</span>
+                            <span class="fr-list-header">Identified pain points:</span>
+                            <div class="flex">
+                                <div class="wid-30">
+                                    <span class="li-1">i</span>
+                                </div>
+                                <div>
+                                    <span class="li-text"><span class="semi">Lack of experiment comparison.</span></span>
+                                </div>
+                            </div>
+                            <div class="flex space-25">
+                                <div  class="wid-30">
+                                    <span class="li-1">ii</span>
+                                </div>
+                                <div>
+                                    <span class="li-text"><span class="semi">It is difficult for users to keep track of the experiment results</span> on Spectro because log files disappear after 21 days since they are not currently stored anywhere.</span>
+                                    <ul class="ul-new">
+                                        <li class="li-m-25">Users are less inclined to use this feature knowing it will disappear after 21 days.</li>
+                                        <li class="no-bottom"><i>"My project might last longer than 21 days."</i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="flex space-25">
+                                    <div  class="wid-30">
+                                        <span class="li-1">iii</span>
+                                    </div>
+                                    <div>
+                                        <span class="li-text">Experiment homepage has pages and pages of experiments. <span class="semi">It’s hard for user to have a glanceable view of which experiment is which.</span></span>
+                                        <ul class="ul-new">
+                                            <li class="li-m-25">What were the metrics? Parameters?</li>
+                                            <li class="no-bottom"><i>"I want to be able to filter experiments by application type, time period, hyperparameter and accuracy."</i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="flex space-25">
+                                        <div  class="wid-30">
+                                            <span class="li-1">iv</span>
+                                        </div>
+                                        <div>
+                                            <span class="li-text semi">NameSpace environment is not clear to user.</span>
+                                            <ul class="ul-new">
+                                                <li class="li-m-25">User spent a ton of time trying to figure out why an experiment isn’t showing up.</li>
+                                                <li><i>"B/c im in the wrong namespace!!!"</i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                        </div>
+                        <div class="inner-fr-flex-2">
+                            <img class="holderimg" src="./images/holderimg.png">
+                        </div>
+                    </div>
+                    <div class="syn-div">
+                        <span class="syn-header">SYNTHESIS</span>
+                        <div class="inner-fr-flex-1-1">
+                        <span class="fr-text-2 white research-t">Machine learning was uncharted territory for all team members when we first began. In order to submerge ourselves in this space, we conducted in-depth primary and secondary research before meeting up with our stakeholders at Bloomberg. This included reviewing literature and interviewing Data Scientists, ML Engineers, and Project Managers.<br><br>With a shared ML language, we then conducted various research methods to try to understand and visualize where the biggest pain points were for our stakeholders and where we could bring the most value. 
+                                </span>
+                                </div>
+                                <!-- <div class="container">
+                                        <div class="insight-box">
+                                                <span class="bot20 oswald-semi block fs55">01</span>
+                                                <span class="insight-header oswald-semi block white fs36">How might we make machine learning better</span>
+                                                <span class="oswald white block">Machine learning was uncharted territory for all team members when we first began. In order to submerge ourselves in this space, we conducted in-depth primary and secondary research before meeting</span>
+                                        </div>
+                                        <div class="insight-box pleft-30">
+                                                <span class="bot20 oswald-semi block fs55">02</span>
+                                                <span class="insight-header oswald-semi block white fs36">How might we make machine learning better</span>
+                                                <span class="oswald white block">Machine learning was uncharted territory for all team members when we first began. In order to submerge ourselves in this space, we conducted in-depth primary and secondary research before meeting</span>
+                                        </div>
+                                        <div class="insight-box pleft-30">
+                                                <span class="bot20 oswald-semi block fs55">03</span>
+                                                <span class="insight-header oswald-semi block white fs36">How might we make machine learning better</span>
+                                                <span class="oswald white block">Machine learning was uncharted territory for all team members when we first began. In order to submerge ourselves in this space, we conducted in-depth primary and secondary research before meeting</span>
+                                        </div>
+                                        <div class="insight-box pleft-30">
+                                                <span class="bot20 oswald-semi block fs55">04</span>
+                                                <span class="insight-header oswald-semi block white fs36">How might we make machine learning better</span>
+                                                <span class="oswald white block">Machine learning was uncharted territory for all team members when we first began. In order to submerge ourselves in this space, we conducted in-depth primary and secondary research before meeting</span>
+                                        </div>
+                                        <div class="insight-box pleft-30">
+                                                <span class="bot20 oswald-semi block fs55">05</span>
+                                                <span class="insight-header oswald-semi block white fs36">How might we make machine learning better</span>
+                                                <span class="oswald white block">Machine learning was uncharted territory for all team members when we first began. In order to submerge ourselves in this space, we conducted in-depth primary and secondary research before meeting</span>
+                                        </div>
+                                        <div class="insight-box pleft-30">
+                                                <span class="bot20 oswald-semi block fs55">06</span>
+                                                <span class="insight-header oswald-semi block white fs36">How might we make machine learning better</span>
+                                                <span class="oswald white block">Machine learning was uncharted territory for all team members when we first began. In order to submerge ourselves in this space, we conducted in-depth primary and secondary research before meeting</span>
+                                        </div>
+                                        <div class="insight-box pleft-30 noborder">
+                                                <span class="bot20 oswald-semi block fs55">07</span>
+                                                <span class="insight-header oswald-semi block white fs36">How might we make machine learning better</span>
+                                                <span class="oswald white block">Machine learning was uncharted territory for all team members when we first began. In order to submerge ourselves in this space, we conducted in-depth primary and secondary research before meeting</span>
+                                        </div>
+                                    
+                                </div> -->
+<div>
+<div class="flexslider">
+    <ul class="slides">
+      <li>
+        <div class="insight-box pleft-30 b-left">
+            <span class="bot20 oswald-semi block fs55">01</span>
+            <span class="insight-header oswald-semi block white fs36">How might we make machine learning better</span>
+            <span class="oswald white block">Machine learning was uncharted territory for all team members when we first began. In order to submerge ourselves in this space, we conducted in-depth primary and secondary research before meeting</span>
+    </div>
+      </li>
+      <li>
+        <div class="insight-box pleft-30">
+            <span class="bot20 oswald-semi block fs55">02</span>
+            <span class="insight-header oswald-semi block white fs36">How might we make machine learning better</span>
+            <span class="oswald white block">Machine learning was uncharted territory for all team members when we first began. In order to submerge ourselves in this space, we conducted in-depth primary and secondary research before meeting</span>
+    </div>
+      </li>
+      <li>
+        <div class="insight-box pleft-30">
+            <span class="bot20 oswald-semi block fs55">03</span>
+            <span class="insight-header oswald-semi block white fs36">How might we make machine learning better</span>
+            <span class="oswald white block">Machine learning was uncharted territory for all team members when we first began. In order to submerge ourselves in this space, we conducted in-depth primary and secondary research before meeting</span>
+    </div>
+      </li>
+      <li>
+        <div class="insight-box pleft-30">
+            <span class="bot20 oswald-semi block fs55">03</span>
+            <span class="insight-header oswald-semi block white fs36">How might we make machine learning better</span>
+            <span class="oswald white block">Machine learning was uncharted territory for all team members when we first began. In order to submerge ourselves in this space, we conducted in-depth primary and secondary research before meeting</span>
+    </div>
+      </li>      <li>
+        <div class="insight-box pleft-30">
+            <span class="bot20 oswald-semi block fs55">03</span>
+            <span class="insight-header oswald-semi block white fs36">How might we make machine learning better</span>
+            <span class="oswald white block">Machine learning was uncharted territory for all team members when we first began. In order to submerge ourselves in this space, we conducted in-depth primary and secondary research before meeting</span>
+    </div>
+      </li>      <li>
+        <div class="insight-box pleft-30">
+            <span class="bot20 oswald-semi block fs55">03</span>
+            <span class="insight-header oswald-semi block white fs36">How might we make machine learning better</span>
+            <span class="oswald white block">Machine learning was uncharted territory for all team members when we first began. In order to submerge ourselves in this space, we conducted in-depth primary and secondary research before meeting</span>
+    </div>
+      </li>      <li>
+        <div class="insight-box pleft-29">
+            <span class="bot20 oswald-semi block fs55">03</span>
+            <span class="insight-header oswald-semi block white fs36">How might we make machine learning better</span>
+            <span class="oswald white block">Machine learning was uncharted territory for all team members when we first began. In order to submerge ourselves in this space, we conducted in-depth primary and secondary research before meeting</span>
+    </div>
+      </li>
+    </ul>
+  </div>
+  
+                    </div>
+                    <div class="footer">
+                        <span class="footer-text">Carnegie Mellon MHCI x Bloomberg</span>
+                    </div>
+            </div>
+        </div>
+        <script src="./scripts.js"></script>
+    </body>
+    </html>

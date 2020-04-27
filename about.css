@@ -1,0 +1,319 @@
+body {
+    margin: 0; 
+    overflow-y:scroll;
+    height: 100%;
+    /* background-color:black; */
+ }
+ .nav-left {
+     width: 70px;
+     min-width: 70px;
+     height:100%;
+     z-index: 2;
+     background-color: white;
+     position: fixed;
+ }
+ #nav-slide {
+     width: 0;
+     height:100%;
+     position: fixed;
+     background-color: white;
+     top: 0; /* Stay at the top */
+     left: 0;
+     z-index: 2;
+     overflow-x: hidden;
+     transition: 0.5s;
+     opacity: 0.97;
+ }
+ .nav-link-1 {
+     margin-left: 116px;
+     margin-top: 33px;
+     display: block;
+     font-family: 'Oswald', sans-serif;
+     font-size:28px;
+ }
+ .nav-link-2 {
+     margin-left: 116px;
+     margin-top: 25px;
+     display: block;
+     font-family: 'Oswald', sans-serif;
+     font-size:28px;
+ }
+ .arrow {
+     width: 35px;
+     margin: 0 auto;
+     display: block;
+     transform: rotate(180deg);
+     transition: 0.5s;
+     margin-top: 13px;
+     position: fixed;
+     margin-left: 17.5px;
+     bottom: 20px;
+ }
+ .arrowup {
+     display: none;
+ }
+ .logo {
+     width:50px;
+     margin-left:10px;
+     margin-top:15px;
+ }
+ .main-slot {
+     background-color: blue;
+     width: 45%;
+     margin-left: 70px;
+ }
+ .sub-slot {
+     background-color: #C2ADDC;
+     width: 19%;
+     min-width: 280px;
+     height: 100%;
+ }
+ 
+ .sub-slot2 {
+     background-color: #05867D;
+     width: 19%;
+     min-width: 280px;
+     height: 100%;
+ }
+ .sub-slot3 {
+     background-color: #081133;
+     width: 19%;
+     min-width: 280px;
+     height: 100%;
+ }
+ .holder {
+     display: flex;
+     height: 100%;
+ }
+ 
+ /* HEADERS */
+ 
+ .header-1 {
+     font-family: 'Oswald', sans-serif;
+     color: white;
+     font-weight: 500;
+     font-size: 55px;
+     margin-left: 70px;
+     display: block;
+     margin-top: 38vh;
+     position: relative;
+ }
+ .subheader-1 {
+     font-family: 'Oswald', sans-serif;    
+     color: white;
+     display: block;
+     margin-left: 70px;
+     width:330px;
+     font-size:28px;
+ }
+ 
+ /* BUTTONS */
+ .abt-button {
+     border:1px solid white;
+     background-color: transparent;
+     color:white;
+     font-size: 18px;
+     font-family: 'Oswald', sans-serif;  
+     padding-left:50px;
+     padding-right:50px;
+     padding-top:14px;
+     padding-bottom:14px;
+     margin-top:39px;
+     margin-left:70px;
+ }
+ 
+ .link1 {
+     text-decoration: none;
+     color: black;
+ }
+ .link2 {
+     text-decoration: none;
+     color: white;
+ }
+ 
+ /* SLOTS */
+ 
+ .sub-slot-header {
+     margin-left:19px;
+     font-family: 'Oswald', sans-serif;
+     font-weight: 600;
+     font-size:36px;
+     display: block;
+     padding-top:72vh;
+     transition: padding-top ease 0.5s;
+     pointer-events: none;
+ }
+ .sub-slot-sub-header {
+     font-family: 'Oswald', sans-serif;
+     margin-left:19px;
+     font-size:28px;
+     display: block;
+     pointer-events: none;
+ }
+ .sub-slot-2-header {
+     margin-left:19px;
+     font-family: 'Oswald', sans-serif;
+     font-weight: 600;
+     font-size:36px;
+     display: block;
+     padding-top:6vh;
+     transition: padding-top ease 0.5s;
+     color:white;
+ }
+ .sub-slot-2-sub-header {
+     font-family: 'Oswald', sans-serif;
+     margin-left:19px;
+     font-size:28px;
+     display: block;
+     color:white;
+     pointer-events: none;
+ }
+ .sub-slot-3-header {
+     margin-left:19px;
+     font-family: 'Oswald', sans-serif;
+     font-weight: 600;
+     font-size:36px;
+     display: block;
+     padding-top:72vh;
+     transition: padding-top ease 0.5s;
+     pointer-events: none;
+     color:white;
+ }
+ .sub-slot-3-sub-header {
+     font-family: 'Oswald', sans-serif;
+     margin-left:19px;
+     font-size:28px;
+     display: block;
+     color:white;
+     pointer-events: none;
+ }
+ 
+ /* 1024 786 */
+ 
+ /* On screens that are 992px or less, set the background color to blue */
+ @media screen and (max-width: 1200px) {
+ /* HEADERS */
+ 
+ .header-1 {
+     font-family: 'Oswald', sans-serif;
+     color: white;
+     font-size: 45px;
+     margin-left: 40px;
+     margin-top: 38vh;
+ }
+ .subheader-1 {
+     font-family: 'Oswald', sans-serif;    
+     color: white;
+     margin-left: 40px;
+     width:330px;
+     font-size:24px;
+ }
+ 
+ /* BUTTONS */
+ .abt-button {
+     border:1px solid white;
+     background-color: transparent;
+     color:white;
+     font-size: 18px;
+     font-family: 'Oswald', sans-serif;  
+     margin-top:39px;
+     margin-left:40px;
+ }
+ .main-slot {
+     min-width: 390px;
+ }
+   }
+ 
+   @media screen and (max-width: 600px) {
+     .nav-left {
+         width: 100%;
+         height: 65px;
+         position: fixed;
+     }
+     .arrow {
+         display: none;
+     }
+     .arrowup {
+             width: 35px;
+             margin: 0 auto;
+             display: block;
+             transform: rotate(180deg);
+             transition: 0.5s;
+             margin-top: 15px;
+             float: right;
+     }
+     .logo {
+         float: right;
+         width: 50px;
+         margin-left: 10px;
+         margin-top: 7.5px;
+         margin-right: 10px;
+     }
+     #nav-slide {
+         width:100%;
+         height:0;
+         margin-top:65px;
+     }
+     .holder {
+         flex-direction: column;
+     }
+     .main-slot {
+         width:100%;
+         margin-left: 0px;
+     }
+     .header-1 {
+         font-size:55px;
+         margin-top:250px;
+     }
+     .subheader-1 {
+         font-size:28px;
+     }
+     .abt-button {
+         margin-bottom: 140px
+     }
+     .sub-slot, .sub-slot2, .sub-slot3 {
+         width:100%;
+     }
+     .sub-slot-header {
+         padding-top: 50px;
+     }
+     .sub-slot-sub-header {
+         padding-bottom:35px;
+     }
+     .sub-slot-2-header {
+         padding-top: 50px;
+     }
+     .sub-slot-2-sub-header {
+         padding-bottom:35px;
+     }
+     .sub-slot-3-header {
+         padding-top: 50px;
+     }
+     .sub-slot-3-sub-header {
+         padding-bottom:35px;
+     }
+     .nav-link-1 {
+         margin-left:34px;
+     }
+     .nav-link-2 {
+         margin-left:34px;
+     }
+     .blog-1 {
+         margin-bottom: 42px;
+     }
+   }
+ 
+ 
+ /* about PAGE */
+ 
+ 
+
+.about-start {
+    height:200px;
+    width:100%;
+    background-color:#081133;
+    margin: 0;
+}
+.about-1 {
+    background-color: #081133;
+}
