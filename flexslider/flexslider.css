@@ -282,3 +282,9 @@ html[xmlns] .flexslider .slides {
     right: 10px;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .flexslider {
+    margin-left:70px; 
+  }
+}

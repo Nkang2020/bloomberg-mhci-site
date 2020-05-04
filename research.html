@@ -1,8 +1,8 @@
 <html lang="en">
     <head>
       <meta charset="utf-8">
-      <title>Bloomberg MHCI Project</title>
-      <meta name="description" content="Bloomberg MHCI Project">
+      <title>Bloomberg MHCI Project - Research</title>
+      <meta name="description" content="Bloomberg MHCI Project - Research">
       <meta name="author" content="Norman">
       <link rel="stylesheet" href="./research.css">
       <link rel="stylesheet" href="./flexslider/flexslider.css" type="text/css">
@@ -15,13 +15,17 @@
     <body>
 
             <div id="nav-slide">
-                <span class="nav-link-1">ABOUT</span>
-                <span class="nav-link-2">RESEARCH</span>
-                <span class="nav-link-2">DESIGN</span>
-                <span class="nav-link-2 blog-1">BLOG</span>
+                <a class="linky" href="./about.html"><span class="nav-link-1">ABOUT</span></a>
+                <a class="linky" href="./research.html"><span class="nav-link-2"><b>RESEARCH</b></span></a>
+                <a class="linky clicker" href="#domain"><span class="nav-link-3 top-change">Domain Knowledge</span></a>
+                <a class="linky clicker" href="#field"><span class="nav-link-3">Field Research in New York</span></a>
+                <a class="linky clicker" href="#state"><span class="nav-link-3">Current State Analysis</span></a>
+                <a class="linky clicker" href="#synthesis"><span class="nav-link-3">Synthesis</span></a>
+                <a class="linky" href="./design.html"><span class="nav-link-2">DESIGN</span></a>
+                <a class="linky" target="_blank" href="https://medium.com/bloombergmhci2020"><span class="nav-link-2 blog-1">BLOG</span></a>
             </div>
             <div class="nav-left">
-                <img class="logo" src="./images/bmhci-logo.png">
+                <a href="./index.html"><img class="logo" src="./images/bmhci-logo.png"></a>
                 <img id="arrow" class="arrow" onclick="combine()" src="./images/arrow.png">
                 <img id="arrowup" class="arrowup" onclick="combineMobile()" src="./images/arrow-up.png">
             </div>
@@ -30,16 +34,17 @@
             </div>
             <div class="research-1">
                 <div class="sub-r-1">
-                    <span class="sub-r-header">RESEARCH</span>
-                    <span class="sub-r-text">Machine learning was uncharted territory for all team members when we first began. In order to submerge ourselves in this space, we conducted in-depth primary and secondary research before meeting up with our stakeholders at Bloomberg. This included reviewing literature and interviewing Data Scientists, ML Engineers, and Project Managers.<br><br>With a shared ML language, we then conducted various research methods to try to understand and visualize where the biggest pain points were for our stakeholders and where we could bring the most value. 
+                    <span class="sub-r-header header-change">RESEARCH</span>
+                    <span class="sub-r-text header-change">Machine learning was uncharted territory for all team members when we first began. In order to submerge ourselves in this space, we conducted in-depth primary and secondary research before meeting up with our stakeholders at Bloomberg. This included reviewing literature and interviewing Data Scientists, ML Engineers, and Project Managers.<br><br>With a shared ML language, we then conducted various research methods to try to understand and visualize where the biggest pain points were for our stakeholders and where we could bring the most value. 
                         </span>
                 </div>
                 <div class="sub-r-2">
-                    <span class="quote">&nbsp&nbspBut the fact that some geniuses were laughed at does&nbsp&nbsp <br> &nbsp&nbspnot imply that all who are laughed at are geniuses.&nbsp&nbsp</span>
+                    <img class="quotey" src="./images/quote-2.png">
+                    <!-- <span class="quote">&nbsp&nbspBut the fact that some geniuses were laughed at does&nbsp&nbsp <br> &nbsp&nbspnot imply that all who are laughed at are geniuses.&nbsp&nbsp</span> -->
                 </div>
             </div>
-            <div class="research-2">
-                <span class="sub-r-header-2">
+            <div id="domain" class="research-2">
+                <span class="sub-r-header-2 header-change">
                     Domain knowledge
                 </span>
                 <div class="hider">
@@ -219,6 +224,113 @@
                         <p class="rgate-text"><i>Runway: machine learning model experiment management tool</i> by Jason Tsay, Todd Mummert, Norman Bobroff, Alan Braz, Peter Westerink, Martin Hirzel</p>
                     </div>
                 </div>
+                <div class="shower-spacer space-up-40">
+                        <span class="tab-text">02</span><span class="tab-text-2-b">Interviews with Faculty & Model Users</span>
+                    </div>
+                    <div class="new-flex">
+                        <div class="inside-tab-2 header-change-2">
+                                <div class="inner-fr-flex-1">
+                                        <!-- <span class="fr-text-1">01</span> -->
+                                        <div>
+                                            <span class="fr-header-1">Faculty</span>
+                                        </div>
+                                        </div>
+                                <span class="tabby-text">We aimed to further our domain knowledge in both Machine Learning and Experiment Management software by interviewing faculty at Carnegie Mellon. We interviewed Professor Jason Hong to discuss topics on Machine Learning and Professor Majd Sakr to review an ML experiment management project occuring in the Computer Science department.<br><br>Professor Sakr provided us with tips he learned from his projects which we kept in mind during our research phase. Sakr found the experiment management process to be broad so he recommended focusing on a specific area to provide strong targeted value. He also warned that the designs we test should be tested on the users who will be using the end product. These considerations helped us orient as we progressed into research.<br><br>Some findings:<br><br></span>
+                                <div class="flex">
+                                    <div class="wid-25">
+                                        <span class="li-1-1">i</span>
+                                    </div>
+                                    <div>
+                                        <span class="tabby-text"><span>Machine learning experiments are highly complex and nuanced. Each experiment can be the replication of the previous one. Instead of trying to design for the entire workflow, it may be more beneficial to zoom in on one specific use case.<br><br></span></span>
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                    <div class="wid-25">
+                                        <span class="li-1-1">ii</span>
+                                    </div>
+                                    <div>
+                                        <span class="tabby-text"><span>Professor Hong challenged us to answer these questions in our research:<br><br><i>What do different teams do?<br>What do they want to see differently from each other?<br>Who manages the cluster?<br>Who has the priority? 
+                                            </i></span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="inside-tab-2 header-change-2 space-up-30">
+                                    <div class="inner-fr-flex-1">
+                                            <!-- <span class="fr-text-1">02</span> -->
+                                            <div>
+                                                <span class="fr-header-1">Model Users</span>
+                                            </div>
+                                            </div>
+                                <span class="tabby-text">We then interviewed Machine Learning graduate students at Carnegie Mellon. These interviews provided us with a foundation early in the process in laying out the machine learning workflow.<br><br>We noticed there was a gap between Machine Learning in academia vs. industry. There wasn’t a high demand for collaboration as students often worked in silos. Their experiment sprints were smaller in scale in terms of amount of data collected.<br><br>Students also didn’t have to worry about production of their models. While keeping these differences in mind, the model user interviews provided us with useful domain knowledge of the ML workflow process.<br><br>Some findings:<br><br></span>
+                                <div class="flex">
+                                    <div class="wid-25">
+                                        <span class="li-1-1">i</span>
+                                    </div>
+                                    <div>
+                                        <span class="tabby-text"><span>In academic ML, there is less emphasis on building stable production models and more on exploration.<br><br></span></span>
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                    <div class="wid-25">
+                                        <span class="li-1-1">ii</span>
+                                    </div>
+                                    <div>
+                                        <span class="tabby-text"><span>Student experiments were generally on a smaller scale and would not require as many resources.<br><br></span></span>
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                    <div class="wid-25">
+                                        <span class="li-1-1">iii</span>
+                                    </div>
+                                    <div>
+                                        <span class="tabby-text"><span>A smaller scale equates to less requirements for tracking metrics.<br><br></span></span>
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                    <div class="wid-25">
+                                        <span class="li-1-1">iv</span>
+                                    </div>
+                                    <div>
+                                        <span class="tabby-text"><span>Academic Machine Learning workflows were similar to industry in the artifacts and tools they used for exploratory research.<br><br></span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shower-spacer space-up-40">
+                                <span class="tab-text">03</span><span class="tab-text-2-b">Competitive Analysis</span>
+                            </div>
+                            <div class="inside-tab-3">
+                                    <span class="tabby-text">In this section we analyzed 4 machine learning management software and provided a breakdown of the key features/capabilities offered. We have guild.ai, comet.ml, neptune.ai, and mlflow.org.<br><br>Their features include:<br><br></span>
+                                    <div class="flex">
+                                        <div class="wid-25">
+                                            <span class="li-1-1">i</span>
+                                        </div>
+                                        <div>
+                                            <span class="tabby-text"><span><b>Tracking</b> (metrics, artifacts, success rates, start/end times of experiments)<br>Reproducibility (ensuring experiments can be reproduced based on artifacts provided)<br><br></span></span>
+                                        </div>
+                                    </div>
+                                    <div class="flex">
+                                        <div class="wid-25">
+                                            <span class="li-1-1">ii</span>
+                                        </div>
+                                        <div>
+                                            <span class="tabby-text"><span><b>Compare experiments</b> (having a visual comparison what works and what doesn’t)<br><br></span></span>
+                                        </div>
+                                    </div>
+                                    <div class="flex">
+                                            <div class="wid-25">
+                                                <span class="li-1-1">iii</span>
+                                            </div>
+                                            <div>
+                                                <span class="tabby-text"><span><b>Collaboration amongst teams</b> (ability to see what members of the teams are currently working on to avoid duplication of efforts)<br><br></span></span>
+                                            </div>
+                                        </div>
+                                        <span class="tabby-text">From this, we gathered that there isn’t a tool that effectively encompasses all the capabilities. This raises two questions for our research in the space of experiment management at Bloomberg:<br><br></span>
+                                        <span class="semi tabby-text-2">Are we designing into a white space or are we working on top of something pre-existing?<br><br>What are the workarounds the engineers are currently adopting?</span>
+                                </div>
+                                <div class="inside-tab-4">
+                                    <img class="compare" src="./images/compare.png" />
+                                </div>
         </div>
 
             <!-- <div class="research-2">
@@ -272,10 +384,10 @@
 
 
             <div class="blank-bar"></div>
-            <div class="field-research">
-                <span class="sub-r-header-3 ">Field Research in New York</span>
+            <div id="field" class="field-research">
+                <span class="sub-r-header-3 header-change">Field Research in New York</span>
                 <div class="fr-div">
-                    <div class="inner-fr">
+                    <div class="inner-fr header-change">
                         <div class="inner-fr-flex-1">
                         <span class="fr-text-1">01</span>
                         <div>
@@ -284,11 +396,11 @@
                         </div>
                         </div>
                         <div class="inner-fr-flex-2">
-                            <img class="holderimg" src="./images/holderimg.png">
+                            <!-- <img class="holderimg" src="./images/holderimg.png"> -->
                         </div>
                     </div>
                 </div>
-                <div class="fr-div">
+                <div class="fr-div push-up">
                         <div class="inner-fr">
                             <div class="inner-fr-flex-1">
                             <span class="fr-text-1">02</span>
@@ -297,8 +409,8 @@
                                 <span class="fr-text-2">We gathered our notes from the New York trip and color coded them across different teams on an excel sheet. Using affinity clustering, we grouped these notes across need-based user statements.<br><br>This exercise was pivotal for us in identifying the core framework for the Machine Learning workflow.  The new framework helped us draft a sequence model workflow exercise for finding patterns during future research methods. We also uncovered gaps and missing information in the flow that needed further inquiry through semi-structured research in the form of a survey.</span>
                             </div>
                             </div>
-                            <div class="inner-fr-flex-2">
-                                <img class="holderimg" src="./images/holderimg.png">
+                            <div class="inner-fr-flex-2 new-width-50">
+                                <img class="holderimg" src="./images/affinity-1.png">
                             </div>
                         </div>
                     </div>
@@ -313,9 +425,9 @@
                                 <span class="fr-text-2">Identified follow-up methods to better understand the machine learning workflow</span>
                         </div>
                     </div>
-                    <span class="sub-r-header-3 ">Current State Analysis</span>
+                    <span id="state" class="sub-r-header-3 header-change">Current State Analysis</span>
                     <div class="inner-fr bottom180">
-                        <div class="inner-fr-flex-1-1">
+                        <div class="inner-fr-flex-1-1 header-change">
                             <span class="fr-text-2">The current state of machine learning management at Bloomberg is conducted on the Data Science Platform (DSP). The DSP’s main function is to run ML experiments by connecting data and models with GPU then displaying the results in logs.<br><br>We aim to understand the advantages and the wish list for the DSP during our interviews with ML engineers. The findings will drive our design for the future state.</span>
                             <span class="fr-list-header">Identified pain points:</span>
                             <div class="flex">
@@ -363,14 +475,30 @@
                                         </div>
                                     </div>
                         </div>
-                        <div class="inner-fr-flex-2">
-                            <img class="holderimg" src="./images/holderimg.png">
+                        <!-- Trigger the Modal -->
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
+                        <div class="inner-fr-flex-2-new">
+                                <img class="holderimg" id="myImg" src="./images/dsp-analysis-min2.png" alt="DSP Analysis">
+                                
+                            <!-- <img class="holderimg" src="./images/dsp-analysis-min2.png"> -->
                         </div>
                     </div>
-                    <div class="syn-div">
-                        <span class="syn-header">SYNTHESIS</span>
-                        <div class="inner-fr-flex-1-1">
-                        <span class="fr-text-2 white research-t">Machine learning was uncharted territory for all team members when we first began. In order to submerge ourselves in this space, we conducted in-depth primary and secondary research before meeting up with our stakeholders at Bloomberg. This included reviewing literature and interviewing Data Scientists, ML Engineers, and Project Managers.<br><br>With a shared ML language, we then conducted various research methods to try to understand and visualize where the biggest pain points were for our stakeholders and where we could bring the most value. 
+                    <div id="synthesis" class="syn-div">
+                        <span class="syn-header header-change">SYNTHESIS</span>
+                        <div class="inner-fr-flex-1-1 header-change">
+                        <span class="fr-text-2 white research-t header-change">Machine learning was uncharted territory for all team members when we first began. In order to submerge ourselves in this space, we conducted in-depth primary and secondary research before meeting up with our stakeholders at Bloomberg. This included reviewing literature and interviewing Data Scientists, ML Engineers, and Project Managers.<br><br>With a shared ML language, we then conducted various research methods to try to understand and visualize where the biggest pain points were for our stakeholders and where we could bring the most value. 
                                 </span>
                                 </div>
                                 <!-- <div class="container">
@@ -469,6 +597,6 @@
                     </div>
             </div>
         </div>
-        <script src="./scripts.js"></script>
+        <script src="./research-script.js"></script>
     </body>
     </html>

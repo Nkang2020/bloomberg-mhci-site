@@ -1,0 +1,230 @@
+body {
+    margin: 0; 
+    overflow-y:scroll;
+    height: 100%;
+    /* background-color:black; */
+ }
+ .nav-left {
+     width: 70px;
+     min-width: 70px;
+     height:100%;
+     z-index: 2;
+     background-color: white;
+     position: fixed;
+ }
+ #nav-slide {
+     width: 0;
+     height:100%;
+     position: fixed;
+     background-color: white;
+     top: 0; /* Stay at the top */
+     left: 0;
+     z-index: 2;
+     overflow-x: hidden;
+     transition: 0.5s;
+     opacity: 0.97;
+ }
+ .nav-link-1 {
+     margin-left: 116px;
+     margin-top: 33px;
+     display: block;
+     font-family: 'Oswald', sans-serif;
+     font-size:28px;
+ }
+ .nav-link-2 {
+     margin-left: 116px;
+     margin-top: 25px;
+     display: block;
+     font-family: 'Oswald', sans-serif;
+     font-size:28px;
+ }
+ .arrow {
+     width: 35px;
+     margin: 0 auto;
+     display: block;
+     transform: rotate(180deg);
+     transition: 0.5s;
+     margin-top: 13px;
+     position: fixed;
+     margin-left: 17.5px;
+     bottom: 20px;
+ }
+ .arrowup {
+     display: none;
+ }
+ .logo {
+     width:50px;
+     margin-left:10px;
+     margin-top:15px;
+ }
+ .holder {
+     display: flex;
+     height: 100%;
+ }
+ .link1 {
+     text-decoration: none;
+     color: black;
+ }
+ .link2 {
+     text-decoration: none;
+     color: white;
+ }
+ .linky {
+    text-decoration: none;
+    color: black;
+ }
+ .des-start {
+     width:55%;
+     background-image: url("./images/design-splash2.svg");
+    background-repeat: none;
+    }
+ .des-start2 {
+     width:45%;
+     
+ }
+ .des-header {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size:60px;
+    margin-top: 100px;
+    display: block;
+    margin-left: 80px;
+ }
+.des-subheader {
+    display: block;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    line-height: 128%;
+    font-weight: 300;
+}
+.des-subheader2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size:24px;
+    margin-left: 80px;
+    margin-top: 40px;
+    display: block;
+    margin-bottom: 20px;
+}
+.des-text {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 156%;
+    letter-spacing: 0.7;
+    display: block;
+}
+.des-text-div {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+ @media screen and (max-width: 1200px) {
+ 
+   }
+
+   @media screen and (max-width: 880px) {
+    .holder {
+        display: block;
+    }
+    .des-start {
+        width: 100%;
+        height:300px;
+    }
+    .des-start2 {
+        border-left: 1px solid #7C7B7B;
+        margin-left: 70px;
+        width:auto;
+    }
+    .des-header {
+        margin-top:0;
+        padding-top:30px;
+    }
+    .des-text-div {
+        padding-bottom: 50px;
+    }
+
+    }
+
+
+ 
+   @media screen and (max-width: 600px) {
+     .nav-left {
+         width: 100%;
+         height: 65px;
+         position: fixed;
+     }
+     .arrow {
+         display: none;
+     }
+     .arrowup {
+             width: 35px;
+             margin: 0 auto;
+             display: block;
+             transform: rotate(180deg);
+             transition: 0.5s;
+             margin-top: 15px;
+             float: right;
+     }
+     .logo {
+         float: right;
+         width: 50px;
+         margin-left: 10px;
+         margin-top: 7.5px;
+         margin-right: 10px;
+     }
+     #nav-slide {
+         width:100%;
+         height:0;
+         margin-top:65px;
+     }
+    .des-start2 {
+        border-left: none;
+        margin-left: 0;
+    }
+    .des-header {
+        margin-left: 50px;
+    }
+    .des-subheader {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .des-subheader2 {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .des-text-div {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+   }
+ 
+ 
+
+.end  {
+    padding-right: 40px;
+}
+#nav-slide {
+    border-right: 1px solid #7C7B7B;
+}
+
+@media screen and (max-width: 975px) {
+
+}
+@media screen and (max-width: 600px) {
+    #nav-slide {
+        border-right: none;
+        border-bottom: 1px solid #7C7B7B;
+    }
+    .nav-left {
+        border-right: none;
+
+    }
+    
+}
+
+@media screen and (max-width: 460px) {
+
+}

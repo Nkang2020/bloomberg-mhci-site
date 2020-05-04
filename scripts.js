@@ -1,13 +1,4 @@
 
-// Can also be used with $(document).ready()
-$(window).load(function() {
-    $('.flexslider').flexslider({
-      animation: "slide",
-      animationLoop: false,
-      slideshow: false,
-      itemWidth: 260,
-    });
-  });
 /* Set the width of the side navigation to 280px */
 function openNav() {
     document.getElementById("nav-slide").style.width = "280px";
@@ -87,8 +78,12 @@ function combineMobile(){
     toggleRotMobile();
 }
 
+// background-color: rgb(8, 17, 51, 0.65);
+
+
+
 if (document.documentElement.clientWidth > 600) {
-	document.getElementsByClassName("sub-slot")[0].addEventListener("mouseover", function( event ) {   
+	document.getElementsByClassName("sub-slot")[0].addEventListener("mouseover", function( event ) {  
         document.getElementsByClassName("sub-slot-header")[0].style.paddingTop = "71vh";
         setTimeout(function(){ document.getElementsByClassName("sub-slot-header")[0].style.paddingTop = "72vh"; }, 600);
         
@@ -103,23 +98,31 @@ if (document.documentElement.clientWidth > 600) {
         setTimeout(function(){ document.getElementsByClassName("sub-slot-2-header")[0].style.paddingTop = "6vh"; }, 600);
         
     });
+
+    function bgChange() {
+        document.getElementsByClassName("r-slot")[0].style.backgroundColor = "rgb(8, 17, 51, 0.65)";
+      }
+      function bgChange2() {
+        document.getElementsByClassName("r-slot")[0].style.backgroundColor = "transparent";
+      }
+    
+      function bgChange3() {
+        document.getElementsByClassName("sub-slot2")[0].style.backgroundColor = "rgb(8, 17, 51, 0.65)";
+      }
+    
+      function bgChange4() {
+        document.getElementsByClassName("sub-slot2")[0].style.backgroundColor = "transparent";
+      }
+      function bgChange5() {
+        document.getElementsByClassName("sub-slot3")[0].style.backgroundColor = "rgb(8, 17, 51, 0.65)";
+      }
+      function bgChange6() {
+        document.getElementsByClassName("sub-slot3")[0].style.backgroundColor = "transparent";
+      }
 }
 
 
 
 
-function openCity(evt,cityName) {
-    var i;
-    var x = document.getElementsByClassName("tabby");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-    }
-    document.getElementById(cityName).style.display = "flex";
 
-    tablinks = document.getElementsByClassName("tablink");
-    for (i = 0; i < x.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(cityName).style.display = "flex";
-    evt.currentTarget.className += " active";
-  }
+

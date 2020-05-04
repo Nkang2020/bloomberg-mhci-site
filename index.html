@@ -5,6 +5,7 @@
       <meta name="description" content="Bloomberg MHCI Project">
       <meta name="author" content="Norman">
       <link rel="stylesheet" href="./styles.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
       <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">
       
     </head>
@@ -12,37 +13,37 @@
     <body>
         <div class="holder"> 
             <div id="nav-slide">
-                <span class="nav-link-1">ABOUT</span>
-                <span class="nav-link-2">RESEARCH</span>
-                <span class="nav-link-2">DESIGN</span>
-                <span class="nav-link-2 blog-1">BLOG</span>
+                    <a class="linky" href="./about.html"><span class="nav-link-1"><b>ABOUT</b></span></a>
+                    <a class="linky" href="./research.html"><span class="nav-link-2">RESEARCH</span></a>
+                    <a class="linky" href="./design.html"><span class="nav-link-2">DESIGN</span></a>
+                    <a class="linky" target="_blank" href="https://medium.com/bloombergmhci2020"><span class="nav-link-2 blog-1">BLOG</span></a>
             </div>
             <div class="nav-left">
-                <img class="logo" src="./images/bmhci-logo.png">
+                <a href="./index.html"><img class="logo" src="./images/bmhci-logo.png"></a>
                 <img id="arrow" class="arrow" onclick="combine()" src="./images/arrow.png">
                 <img id="arrowup" class="arrowup" onclick="combineMobile()" src="./images/arrow-up.png">
             </div>
             <div class="main-slot">
                 <span class="header-1">BLOOMINEERS</span>
                 <span class="subheader-1">FACILITATING COLLABORATION IN MACHINE LEARNING MANAGEMENT</span>
-                <button class="abt-button">About</button>
+                <a href="./about.html"><button class="abt-button">About</button></a>
             </div>
-            <a class="link1" href="#">
-            <div class="sub-slot">
+            <a class="link1" href="./research.html">
+            <div class="sub-slot r-slot" onmouseover="bgChange()" onmouseout="bgChange2()">
                 <span class="sub-slot-header">RESEARCH</span>
                 <span class="sub-slot-sub-header">THIS IS WHO WE ARE</span>
             </div>
             </a>
-            <a class="link2" href="#">
-            <div class="sub-slot2">
+            <a class="link2" href="./design.html">
+            <div class="sub-slot2" onmouseover="bgChange3()" onmouseout="bgChange4()">
                 <span class="sub-slot-2-header">DESIGN</span>
-                <span class="sub-slot-2-sub-header">THIS IS WHO WE ARE</span>
+                <span class="sub-slot-2-sub-header">THIS IS WHAT WE DO</span>
             </div>
             </a>
-            <a class="link2" href="#">
+            <a class="link2" target="_blank" href="https://medium.com/bloombergmhci2020" onmouseover="bgChange5()" onmouseout="bgChange6()">
             <div class="sub-slot3">
                 <span class="sub-slot-3-header">BLOG</span>
-                <span class="sub-slot-3-sub-header">THIS IS WHO WE ARE</span>
+                <span class="sub-slot-3-sub-header">THIS IS OUR BLOG</span>
             </div>
             </a>
         </div>
