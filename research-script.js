@@ -91,6 +91,7 @@ console.log(document.getElementById("domain"));
 for (var i=0; i< document.getElementsByClassName("clicker").length; i++) {
   document.getElementsByClassName("clicker")[i].addEventListener("click", function(){
     closeNav();
+    toggleRot();
   })
 }
 
