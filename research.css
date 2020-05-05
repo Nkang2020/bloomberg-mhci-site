@@ -586,11 +586,17 @@ ol::before {
     font-size:55px;
 }
 .fs36 {
-    font-size:36px;
+    font-size:31px;
+}
+.addbot {
+ padding-bottom: 42px;
+}
+.addbot2 {
+    padding-bottom: 24px;
 }
 .insight-box {
-    width:230px;
-    min-width: 230px;
+    width:300px;
+    min-width: 300px;
     border-right:1px solid white;
 }
 .insight-header {
@@ -605,10 +611,12 @@ ol::before {
     margin-right: 60px;
 }
 .pleft-30 {
-    padding-left:30px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 .pleft-29 {
-    padding-left:29px;
+    padding-left: 29px;
+    padding-right: 29px;
 }
 .noborder {
     border-right:none;
@@ -963,6 +971,10 @@ ol::before {
   }
 
   @media screen and (max-width: 600px) {
+    .fs55 {
+        font-size:45px;
+    }
+
     .nav-left {
         width: 100%;
         height: 65px;
@@ -1033,7 +1045,16 @@ ol::before {
         min-width: 200px;
     }
     .fs36 {
-        font-size: 26px;
+        font-size: 21px;
+    }
+    .fs12 {
+        font-size: 12px;
+    }
+    .addbot {
+        padding-bottom: 32px;
+    }
+    .addbot3 {
+        padding-bottom:7px;
     }
     .inside-tab-4 {
         width: 100%;

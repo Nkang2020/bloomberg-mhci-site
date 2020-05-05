@@ -1,3 +1,9 @@
+var wit1;
+if (document.documentElement.clientWidth > 600) {
+wit1 = 360;
+} else {
+  wit1 = 260;
+}
 
 // Can also be used with $(document).ready()
 $(window).load(function() {
@@ -5,7 +11,7 @@ $(window).load(function() {
       animation: "slide",
       animationLoop: false,
       slideshow: false,
-      itemWidth: 260,
+      itemWidth: wit1,
     });
   });
 /* Set the width of the side navigation to 280px */
