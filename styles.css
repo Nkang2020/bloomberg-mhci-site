@@ -46,18 +46,20 @@ body {
     display: block;
     transform: rotate(180deg);
     transition: 0.5s;
-    margin-top: 13px;
-    position: fixed;
+    margin-top: 15px;
     margin-left: 17.5px;
-    bottom: 20px;
 }
 .arrowup {
     display: none;
 }
 .logo {
     width:50px;
-    margin-left:10px;
+    /* margin-left:10px;
+    margin-top:15px; */
     margin-top:15px;
+    position: fixed;
+    margin-left: 10px;
+    bottom: 20px;
 }
 .main-slot {
     width: 45%;
@@ -364,13 +366,14 @@ button:focus {outline:0;}
             transition: 0.5s;
             margin-top: 15px;
             float: right;
+            margin-right: 10px;
     }
     .logo {
-        float: right;
         width: 50px;
         margin-left: 10px;
         margin-top: 7.5px;
         margin-right: 10px;
+        position: inherit;
     }
     #nav-slide {
         width:100%;
