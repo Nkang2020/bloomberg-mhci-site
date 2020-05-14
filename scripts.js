@@ -41,7 +41,7 @@ function combine(){
 // mobile nav
 /* Set the width of the side navigation to 280px */
 function openNavMobile() {
-    document.getElementById("nav-slide").style.height = "310px";
+    document.getElementById("nav-slide").style.height = "380px";
   }
   
   /* Set the width of the side navigation to 0 */
@@ -59,7 +59,7 @@ function openNavMobile() {
 
   function toggleNavMobile(){
     navSizeMobile = document.getElementById("nav-slide").style.height;
-    if (navSizeMobile == "310px") {
+    if (navSizeMobile == "380px") {
         return closeNavMobile();
     }
     return openNavMobile();

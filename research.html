@@ -16,7 +16,8 @@
     <body>
 
             <div id="nav-slide">
-                <a class="linky" href="./about"><span class="nav-link-1">ABOUT</span></a>
+                <a class="linky" href="./"><span class="nav-link-1">HOME</span></a>
+                <a class="linky" href="./about"><span class="nav-link-2">ABOUT</span></a>
                 <a class="linky" href="./research"><span class="nav-link-2"><b>RESEARCH</b></span></a>
                 <a class="linky clicker" href="#domain"><span class="nav-link-3 top-change">Domain Knowledge</span></a>
                 <a class="linky clicker" href="#field"><span class="nav-link-3">Field Research in New York</span></a>
@@ -44,7 +45,9 @@
                     <span class="sub-r-text header-change">Machine learning was uncharted territory for all team members when we first began. In order to submerge ourselves in this space, we conducted in-depth primary and secondary research before meeting up with our stakeholders at Bloomberg. This included reviewing literature and interviewing Data Scientists, ML Engineers, and Project Managers.<br><br>With a shared ML language, we then conducted various research methods to try to understand and visualize where the biggest pain points were for our stakeholders and where we could bring the most value. 
                         </span>
                         <div class="header-change">
-                        <button class="button-1 mover-1">Download Research Report</button>
+                        <a target="_blank" href="https://drive.google.com/file/d/1tq6nahyIZ_vKm7iDk10eW1ZgokBb28r2/view?usp=sharing">
+                            <button class="button-1 mover-1">Download Research Report</button>
+                        </a>
                     </div>
                 </div>
                 <div class="sub-r-2">
@@ -587,20 +590,43 @@
                                         </div>
                                     </div>
                         </div> -->
-                        <!-- Trigger the Modal -->
+                        <!-- Images used to open the lightbox -->
 
-<!-- The Modal -->
-<div id="myModal" class="modal">
+      
+      <!-- The Modal/Lightbox -->
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+      
+          <div class="mySlides">
+            <div class="numbertext">1 / 3</div>
+            <img class="modal-switch-1" src="./images/insight1desktop.png" style="width:100%">
+            <img class="modal-switch-2" src="./images/insight1mobile.png" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">2 / 3</div>
+            <img class="modal-switch-1" src="./images/insight2desktop.png" style="width:100%">
+            <img class="modal-switch-2" src="./images/insight2mobile.png" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">3 / 3</div>
+            <img class="modal-switch-1" src="./images/insight3desktop.png" style="width:100%">
+            <img class="modal-switch-2" src="./images/insight3mobile.png" style="width:100%">
+          </div>
+      
+          <!-- Next/previous controls -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+          <!-- Caption text -->
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+        </div>
+      </div>
 
-  <!-- The Close Button -->
-  <span class="close">&times;</span>
-
-  <!-- Modal Content (The Image) -->
-  <img class="modal-content" id="img01">
-
-  <!-- Modal Caption (Image Text) -->
-  <div id="caption"></div>
-</div>
                         <div class="inner-fr-flex-2-new">
                                 <img class="holderimg" id="myImg" src="./images/dsp-analysis-min2.png" alt="DSP Analysis">
                                 
@@ -617,10 +643,9 @@
                             <div class="insight-box-1 hide-1">
                                 <span class="insight-header-1">Insight 01</span>
                                 <span class="insight-text-1">Ineffective tracking leads to further issues in documentation and discoverability.</span>
-                                <div class="learnmore-box">
+                                <div class="learnmore-box" onclick="openModal();currentSlide(1)">
                                         <span class="fright learnmore">Learn more</span>
-                                        <img class="fright new-window" src="./images/newwindow.svg">
-                                        
+                                        <img class="fright new-window" src="./images/newwindow.svg">  
                                 </div>
                             </div>
                         </div>
@@ -628,7 +653,7 @@
                                 <div class="insight-box-1">
                                         <span class="insight-header-1">Insight 01</span>
                                         <span class="insight-text-1">Ineffective tracking leads to further issues in documentation and discoverability.</span>
-                                        <div class="learnmore-box">
+                                        <div class="learnmore-box" onclick="openModal();currentSlide(1)">
                                                 <span class="fright learnmore">Learn more</span>
                                                 <img class="fright new-window" src="./images/newwindow.svg">
                                                 
@@ -637,7 +662,7 @@
                                     <div class="insight-box-1">
                                             <span class="insight-header-1">Insight 02</span>
                                             <span class="insight-text-2">The machine learning workflow is comprised of three interdependent components such as data, code, and results, which are all reliant on effective tracking.</span>
-                                            <div class="learnmore-box">
+                                            <div class="learnmore-box" onclick="openModal();currentSlide(2)">
                                                     <span class="fright learnmore">Learn more</span>
                                                     <img class="fright new-window" src="./images/newwindow.svg">
                                                     
@@ -647,7 +672,7 @@
                                         <div class="insight-box-2">
                                                 <span class="insight-header-1">Insight 03</span>
                                                 <span class="insight-text-2">Because of system limitations, machine learning engineers resort to developing their own workarounds to substitute workflow challenges.</span>
-                                                <div class="learnmore-box">
+                                                <div class="learnmore-box" onclick="openModal();currentSlide(3)">
                                                         <span class="fright learnmore">Learn more</span>
                                                         <img class="fright new-window" src="./images/newwindow.svg">
                                                         
@@ -660,7 +685,7 @@
                                 <div class="insight-box-2">
                                         <span class="insight-header-1">Insight 03</span>
                                         <span class="insight-text-2">Because of system limitations, machine learning engineers resort to developing their own workarounds to substitute workflow challenges.</span>
-                                        <div class="learnmore-box">
+                                        <div class="learnmore-box" onclick="openModal();currentSlide(3)">
                                                 <span class="fright learnmore">Learn more</span>
                                                 <img class="fright new-window" src="./images/newwindow.svg">
                                                 
@@ -670,7 +695,7 @@
                                     <div class="insight-box-1">
                                             <span class="insight-header-1">Insight 02</span>
                                             <span class="insight-text-2">The machine learning workflow is comprised of three interdependent components such as data, code, and results, which are all reliant on effective tracking.</span>
-                                            <div class="learnmore-box">
+                                            <div class="learnmore-box" onclick="openModal();currentSlide(2)">
                                                     <span class="fright learnmore">Learn more</span>
                                                     <img class="fright new-window" src="./images/newwindow.svg">
                                                     
