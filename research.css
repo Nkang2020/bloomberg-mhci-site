@@ -296,6 +296,9 @@ body {
     background-image: url(./images/research-splash-2.svg);
     background-repeat: no-repeat;
     background-position: 50% 27%;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }
 .research-1 {
     background-color: #081133;
@@ -553,7 +556,7 @@ button:focus {outline:0;}
     color: #E546E9;
     font-size: 16px;
     font-weight:600;
-    height:100%;
+    /* height:100%; */
     margin-right:20px;
     padding-top: 5px;
 }
