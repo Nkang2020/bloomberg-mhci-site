@@ -5,6 +5,7 @@ body {
    /* background-color:black; */
    background-image: url(./images/home-splash.png);
    background-repeat: no-repeat;
+   background-size: cover;
 }
 .nav-left {
     width: 70px;
