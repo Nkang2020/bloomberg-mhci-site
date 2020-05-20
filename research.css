@@ -287,7 +287,9 @@ body {
  
  
 /* RESEARCH PAGE */
-
+.blacklink {
+    color: black;
+}
 .research-start {
     height:350px;
     width:100%;
