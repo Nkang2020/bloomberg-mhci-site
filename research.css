@@ -61,6 +61,9 @@ body {
 .arrowup {
     display: none;
 }
+.mb60 {
+    margin-bottom: 60px;
+}
 .logo {
     width:50px;
     /* margin-left:10px;
@@ -511,6 +514,9 @@ button:focus {outline:0;}
     width:45%;
     display: flex;
 }
+.inner-fr-nflex-1 {
+    width:45%;
+}
 .inner-fr-flex-1-1 {
     width:45%;
 }
@@ -608,6 +614,13 @@ ol::before {
     color: #E546E9;
 }
 .li-1-1 {
+    font-family: 'Lato', sans-serif;
+    font-size:16px;
+    line-height: 156%;
+    letter-spacing: 0.7;
+    color: #E546E9;
+}
+.li-1-1-x {
     font-family: 'Lato', sans-serif;
     font-size:16px;
     line-height: 156%;
@@ -748,6 +761,12 @@ ol::before {
     border-left: 1px solid white;
 }
 .tabby-text {
+    font-family: 'Lato', sans-serif;
+    font-size:16px;
+    line-height: 156%;
+    letter-spacing: 0.7;
+}
+.tabby-text-x {
     font-family: 'Lato', sans-serif;
     font-size:16px;
     line-height: 156%;
@@ -1080,7 +1099,7 @@ ol::before {
   
   /* The Close Button */
   .close {
-    color: white;
+    color: #CACACA;
     position: absolute;
     top: 10px;
     font-size: 35px;
@@ -1390,6 +1409,9 @@ ol::before {
         display: block;
     }
     .inner-fr-flex-1 {
+        width: auto;
+    }
+    .inner-fr-nflex-1 {
         width: auto;
     }
     .new-width-50 {

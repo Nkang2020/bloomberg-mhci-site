@@ -315,35 +315,94 @@ body {
  
  /* about PAGE */
  
- 
-
+ .about-top {
+     height: 100vh;
+     display: flex;
+     width: 100%;
+     margin-left: 70px;
+ }
+.profile-div {
+    margin-left: 70px;
+    width: calc(100%-70px);
+    display: flex;
+    flex-wrap: wrap;
+}
 .about-start {
     width: 450px;
     height: 100%;
-    background-color:#081133;
-    margin-left: 70px;
+    background-image: url(./images/home-splash.png);
     min-width: 450px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: -110% 50%;
+    background-size: contain;
+}
+.about-start-2 {
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 6vh;
 }
 .about-header {
-    color: white;
-    font-size: 36px;
+    color: black;
+    font-size: 44px;
     font-weight: 700;
     font-family: 'Oswald', sans-serif;  
     display: block;
     margin: 0 auto;
-    width: 265px;
-    margin-top: 145px;
 }
-.about-text {
-    color: white;
+.about-sub {
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif; 
+    margin-top: 3vh;
+    display: block;
+}
+.about-sub-2 {
+    font-family: 'Oswald', sans-serif; 
+    color: black;
     font-size: 18px;
-    font-family: 'Oswald', sans-serif;  
     line-height: 156%;
     letter-spacing: 0.7;
-    width: 265px;
+    margin-top: 1vh;
+    display: block;
+}
+.about-flex {
+    display: flex;
+    justify-content: space-between;
+}
+.about-split {
+    width: 45%;
+}
+.about-text {
+    color: black;
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;  
+    line-height: 156%;
+    letter-spacing: 0.7;
     display: block;
     margin: 0 auto;
-    margin-top: 27px;
+    margin-top: 1vh;
+}
+.about-text-b {
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;  
+    line-height: 156%;
+    letter-spacing: 0.7;
+    display: block;
+    margin: 0 auto;
+}
+.m7 {
+    margin-top: 7vh;    
+}
+.mb2 {
+    margin-bottom: 2vh;
+}
+.img1 {
+    width: 55%;
 }
 .individuals {
     width: 245px;

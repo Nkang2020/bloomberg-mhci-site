@@ -616,6 +616,10 @@
             <img class="modal-switch-1" src="./images/insight3desktop.png" style="width:100%">
             <img class="modal-switch-2" src="./images/insight3mobile.png" style="width:100%">
           </div>
+          <div class="mySlides">
+                
+                <img class="modal-switch-1" src="./images/dsp-analysis-min2.png" style="width:100%">
+              </div>
       
           <!-- Next/previous controls -->
           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -627,12 +631,48 @@
           </div>
         </div>
       </div>
-
-                        <div class="inner-fr-flex-2-new">
-                                <img class="holderimg" id="myImg" src="./images/dsp-analysis-min2.png" alt="DSP Analysis">
-                                
-                            <!-- <img class="holderimg" src="./images/dsp-analysis-min2.png"> -->
-                        </div>
+      <span class="sub-r-header-3 header-change">Current State Analysis</span>
+      <div class="inner-fr header-change mb60">
+            <div class="inner-fr-nflex-1">
+                    <span class="fr-text-2">The current state of machine learning management at Bloomberg is conducted on the Data Science Platform (DSP), the main function of which is to run ML experiments by connecting data and models with GPU, then displaying the results in logs.<br><br>In this diagram we give a synthesized analysis of the pain points and opportunities identified from semi-structured interviews, love letter/breakup letters, and surveys. The synthesized findings will drive our design for the future state.<br/><br/>Top pain points:</span>
+                    <br/><br/>
+                    <div class="flex">
+                                    <div class="wid-25">
+                                        <span class="li-1-1-x">i</span>
+                                    </div>
+                                    <div>
+                                        <span class="tabby-text-x"><span><b>Lack of Experiment Comparison.</b> DSP doesn’t allow for an easy way to visually compare different runs and experiments.<br><br></span></span>
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                        <div class="wid-25">
+                                            <span class="li-1-1-x">ii</span>
+                                        </div>
+                                        <div>
+                                            <span class="tabby-text-x"><span><b>Log files disappear.</b> It is difficult for users to keep track of the experiment results because log files disappear after 21 days. This caused the engineers to use inconsistent artifacts to track their experiments across and within teams.<br><br></span></span>
+                                        </div>
+                                    </div>
+                                    <div class="flex">
+                                            <div class="wid-25">
+                                                <span class="li-1-1-x">iii</span>
+                                            </div>
+                                            <div>
+                                                <span class="tabby-text-x"><span><b>Disorganized runs.</b> Experiment homepage has pages and pages of experiments with no options to tag, filter, or search. In addition, the lack of information about the experiments makes it hard for users to view experiements at a glance.<br><br></span></span>
+                                            </div>
+                                        </div>
+                                        <div class="flex">
+                                                <div class="wid-25">
+                                                    <span class="li-1-1-x">iv</span>
+                                                </div>
+                                                <div>
+                                                    <span class="tabby-text-x"><span><b>DSP is not integrated with other programs.</b> Currently, there is a disconnect between the dataset, model, experiment results, and documentation--they’re almost like separate flows when they should be a cohesive part of the engineers’ workflow.<br><br></span></span>
+                                                </div>
+                                            </div>
+            </div>
+            <div class="inner-fr-flex-2 widnew">
+                    <img class="holderimg" id="myImg" onclick="openModal();currentSlide(4)" src="./images/dsp-analysis-min2.png" alt="DSP Analysis">
+            </div>
+        </div>
                     </div>
                     <div id="synthesis" class="syn-div">
                         <span class="syn-header header-change">SYNTHESIS</span>
