@@ -321,11 +321,23 @@ body {
      width: 100%;
      margin-left: 70px;
  }
+ .switch-2 {
+     display: none;
+ }
+
+ .black {
+     color: black;
+ }
 .profile-div {
     margin-left: 70px;
-    width: calc(100%-70px);
+    /* width: calc(100% - 70px); */
     display: flex;
     flex-wrap: wrap;
+    border-left: 1px solid black;
+    padding-bottom: 100px;
+}
+.profile-holder {
+    width: 33%;
 }
 .about-start {
     width: 450px;
@@ -333,9 +345,8 @@ body {
     background-image: url(./images/home-splash.png);
     min-width: 450px;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: -110% 50%;
-    background-size: contain;
+    background-position: 40% 20%;
+    background-size: 310%;
 }
 .about-start-2 {
     width: 100%;
@@ -350,6 +361,15 @@ body {
     font-family: 'Oswald', sans-serif;  
     display: block;
     margin: 0 auto;
+}
+.about-header-2 {
+    color: black;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;  
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 4vh;
 }
 .about-sub {
     color: black;
@@ -406,12 +426,20 @@ body {
 }
 .individuals {
     width: 245px;
-    margin-left: 90px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 140px;
 }
 .individuals-2 {
     width: 245px;
-    margin-left: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 140px;
+}
+.individuals-3 {
+    width: 325px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 140px;
 }
 .profile-pic {
@@ -460,9 +488,60 @@ body {
     margin-top: 38vh;
     margin-left: -33px;
 }
+.switch-4 {
+    display: none;
+}
+@media screen and (max-width: 1270px) {
+    .m7 {
+        margin-top:6vh;
+    }
+}
+@media screen and (max-width: 1220px) {
+    .m7 {
+        margin-top: 4vh;
+    }
+}
+@media screen and (max-width: 1190px) {
+    .holder {
+        display: block;
+        height: auto;
+    }
+    .about-top {
+        display: block;
+        height: auto;
+    }
+    .about-start {
+    background-image: url(./images/home-splash.png);
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    background-size: 120%;
+    width: auto;
+    height: 300px;
+    }
+    .about-start-2 {
+        width: auto;
+        border-left:1px solid black;
+    }
+    .about-top {
+        width:auto;
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    .profile-holder {
+        width: 50%;
+    }
+    .switch-1 {
+        display: none;
+    }
+    .switch-2 {
+        display: flex;
+        align-items: center;
+    }
+}
 
 @media screen and (max-width: 975px) {
-    .about-start {
+    /* .about-start {
      width: 100%;
      height: auto;
      margin-left: 0px;
@@ -506,6 +585,20 @@ body {
         height: 80px;
         border-left: 1px solid #7C7B7B;
         margin-left: 70px;
+    } */
+}
+@media screen and (max-width: 800px) {
+    .img1 {
+        width:100%;
+    }
+    .switch-4 {
+        display: block;
+    }
+    .switch-3 {
+        display: none;
+    }
+    .profile-holder {
+        width: 100%;
     }
 }
 @media screen and (max-width: 600px) {
@@ -520,29 +613,38 @@ body {
         border-right: none;
 
     }
-    .about-text {
-        padding-left: 0;
-    }
-    .about-header {
-        padding-left: 0px;
-        padding-top: 100px;
-    }
-    .prof-holder {
+    .about-start {
+        min-width: 0px;
         margin-left: 0;
-        border: none;
     }
-    .footy {
-        width: 20px;
-        display: block;
-        height: 80px;
+    .about-top {
+        margin-left: 0;
+    }
+    .about-start-2 {
+        padding-left: 40px;
+        padding-right: 40px;
         border-left: none;
-        margin-left: 70px;
+    }
+    .profile-div {
+        margin-left: 0;
+        border-left: none;
     }
 }
 
-@media screen and (max-width: 460px) {
-    .about-start {
-        min-width: 0;
+@media screen and (max-width: 500px) {
+    .about-flex {
+        display: block;
     }
-
+    .about-split {
+        width: 100%;
+    }
+    .endy {
+        margin-bottom: 40px;
+    }
+    .about-start {
+        background-size: 310%;
+    }
+    .individuals-3, .individuals, .individuals-2 {
+        margin-top: 90px;
+    }
 }
