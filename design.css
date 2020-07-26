@@ -636,13 +636,16 @@ body {
 .sub-r-text {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
-    color: white;
+    color: black;
     line-height: 156%;
     letter-spacing: 0.7;
     width: 500px;
     display: block;
     margin-left:100px;
     padding-bottom: 50px;
+}
+.white {
+    color: white;
 }
 .quote {
     color:#2B2B2B;
@@ -663,7 +666,7 @@ body {
 }
 .sub-r-header-4 {
     font-family: 'Oswald', sans-serif; 
-    color: white;
+    color: black;
     font-weight:600;
     font-size: 30px;
     display: block;
@@ -748,6 +751,11 @@ button:focus {outline:0;}
 .blank-bar {
     width:100%;
     background-color: #081133;
+}
+.blank-bar-1 {
+    width:100%;
+    background-color: white;
+    border-left: 1px solid black;
 }
 .sub-r-header-3 {
     font-family: 'Oswald', sans-serif; 
@@ -1091,7 +1099,7 @@ ol::before {
 }
 .quotey {
     width: 430px;
-    margin-top: 130px;
+    margin-top: 50px;
     margin-right: 120px;
 }
 #nav-slide {
@@ -1557,7 +1565,11 @@ ol::before {
         margin-top: 38px;
     }
 }
-
+@media screen and (max-width: 1100px) {
+    .quotey {
+        display: none;
+    }
+}
 
 @media screen and (max-width: 920px) {
     .holder {
@@ -1631,6 +1643,9 @@ ol::before {
        margin-top: 15px;
        float: right;
        margin-right: 10px;
+}
+.blank-bar-1 {
+    border-left: none;
 }
 .logo {
    width: 50px;
